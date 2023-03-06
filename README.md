@@ -1,1 +1,40 @@
 # huiyi0923.github.io
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CIRleq</title>
+        <style>
+            .box{
+                width: 600px;
+                height: 1200px;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1 style="color: greenyellow;">CIRleq&微清</h1>
+            <h2>1148246926</h2>
+            <h1 style="color: rgb(118, 46, 169);">HTML</h1>
+            <img src="./logo.png" alt="图片失效" width="200px">
+            <embed src="./那一瞬间.m4a" width="500" height="300" autostart=false>
+            <body background="./背景图片.jpg">
+            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="300" height="500" allowtransparency="true"></iframe>
+            <br />
+            <div class="foot">
+                Copyright © 2021 版权所有
+                <br>
+                地址：<a href="https://" target="_blank">Github</a>
+                <br>
+                微清YYDS
+            <br>
+            <a href="https://www.baidu.com" target="_blank">搜索</a>
+        </div>
+    </body>
+</html>
