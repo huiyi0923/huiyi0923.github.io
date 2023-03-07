@@ -19,7 +19,6 @@
     <body>
         <div class="box">
             <h1 style="color: greenyellow;">CIRleq&微清</h1>
-            <h2>1148246926</h2>
             <h1 style="color: rgb(118, 46, 169);">HTML</h1>
             <img src="https://user-images.githubusercontent.com/126973386/223406272-48697b8c-7454-4e20-b5c5-000ddbdee458.png" alt="图片失效" width="200px">
             <embed src="./那一瞬间.m4a" width="500" height="300" autostart=false>
