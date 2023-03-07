@@ -28,11 +28,11 @@
             <div class="foot">
                 Github © 2023 版权所有
                 <br>
-                站长QQ：1148246926；站长是ikun，联系站长请先发kun图！
+                <b5 style="color: blue;">站长QQ：1148246926；站长是ikun，联系站长请先发kun图！<b5>
                 <br>
-                微清：提供技术服务支持
+                <b5 style="color: blue;">微清：提供技术服务支持<b5>
                 <br>
-                大胆的说一声：微清YYDS！
+                <b5 style="color: blue;"大胆的说一声：微清YYDS！<b5>
             <br>
             <a href="https://www.baidu.com" target="_blank">搜索</a>
         </div>
