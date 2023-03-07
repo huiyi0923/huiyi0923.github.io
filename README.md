@@ -28,15 +28,15 @@
             <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="300" height="500" allowtransparency="true"></iframe>
             <br />
             <div class="foot">
-                Copyright © 2021 版权所有
+                Github © 2023 版权所有
                 <br>
-                地址：<a href="https://" target="_blank">Github</a>
+                站长QQ：1148246926；站长是ikun，联系站长请先发kun图！
                 <br>
-                微清YYDS
+                微清：提供技术服务支持
+                <br>
+                大胆的说一声：微清YYDS！
             <br>
             <a href="https://www.baidu.com" target="_blank">搜索</a>
         </div>
     </body>
 </html>
-![logo](https://user-images.githubusercontent.com/126973386/223406272-48697b8c-7454-4e20-b5c5-000ddbdee458.png)
-![背景图片](https://user-images.githubusercontent.com/126973386/223406377-258ba963-98b0-44ff-b9aa-8cb21e856d89.jpg)
