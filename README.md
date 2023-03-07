@@ -35,7 +35,7 @@
                 <br>
                 <b5 style="color: bluegreen;"大胆的说一声：微清YYDS！<b5>
             <br>
-            <a href="https://www.baidu.com" target="_blank">搜索</a>
+            <a href="https://www.baidu.com" target="_blank">搜💌索</a>
         </div>
     </body>
 </html>
