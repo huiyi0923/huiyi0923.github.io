@@ -33,9 +33,10 @@
                 <br>
                 <b5 style="color: white;">微清：提供技术服务支持<b5>
                 <br>
-                <b5 style="color: white;"大胆的说一声：微清YYDS！<b5>
+                <b5 style="color: white;">大胆的说一声：微清YYDS！<b5>
             <br>
-            <a href="https://www.baidu.com" target="_blank">搜💌索</a>
+            <a href="https://www.baidu.com" target="_blank">点我：搜💌索</a>
+            <br>
         </div>
     </body>
 </html>
