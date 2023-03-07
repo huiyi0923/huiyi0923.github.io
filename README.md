@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>CIRleq</title>
+        <title>CIRleq官网</title>
         <style>
             .box{
                 width: 600px;
