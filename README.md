@@ -26,6 +26,7 @@
             <img src="https://user-images.githubusercontent.com/126973386/223428002-0f108724-88c3-4f03-9f3e-512fb5fd3c59.png" alt="图片" width="500px">
             <body background="https://user-images.githubusercontent.com/126973386/223406377-258ba963-98b0-44ff-b9aa-8cb21e856d89.jpg">
             <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="300" height="500" allowtransparency="true"></iframe>
+            <h2> 发行日期：2023.3.4/正式日期：2023.3.6 <h2>
             <br />
             <div class="foot">
                 Github © 2023 版权所有
