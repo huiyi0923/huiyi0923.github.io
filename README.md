@@ -34,7 +34,6 @@
                 <h5 style="color: white;">站长QQ：1148246926；站长是ikun，联系站长请先发kun图！</h5>
                 <br>
                 <h5 style="color: white;">微清：提供技术服务支持</h5>
-                <br>
                 <h5 style="color: white;">大胆的说一声：微清YYDS！</h5>
             <br>
             <a href="https://www.baidu.com" target="_blank">点我：搜💌索</a>
