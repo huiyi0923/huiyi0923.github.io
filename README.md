@@ -1,9 +1,8 @@
-# 微清网络
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>CIRleq官网</title>
+        <title>微清</title>
         <style>
             .box{
                 width: 600px;
@@ -19,15 +18,146 @@
     </head>
     <body>
         <div class="box">
+            <button id="button">经过我</button>
+<script>
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
+(function () {
+    if (!window.AudioContext) {
+        alert('当前浏览器不支持Web Audio API');
+        return;
+    }
+    var eleButton = document.getElementById('button');
+    var audioCtx = new AudioContext();
+    var arrFrequency = "880 987 1046 987 1046 1318 987 659 659 880 784 880 1046 784 659 659 698 659 698 1046 659 1046 1046 1046 987 698 698 987 987 880 987 1046 987 1046 1318 987 659 659 880 784 880 1046 784 659 698 1046 987 1046 1174 1174 1174 1046 1046 880 987 784 880 1046 1174 1318 1174 1318 1567 1046 987 1046 1318 1318 1174 784 784 880 1046 987 1174 1046 784 784 1396 1318 1174 659 1318 1046 1318 1760 1567 1567 1318 1174 1046 1046 1174 1046 1174 1567 1318 1318 1760 1567 1318 1174 1046 1046 1174 1046 1174 987 880 880 987 880".split(" ");
+    var start = 0, direction = 1;
+    eleButton.addEventListener('mouseenter', function () {
+        var frequency = arrFrequency[start];
+        if (!frequency) {
+            direction = -1 * direction;
+            start = start + 2 * direction;
+            frequency = arrFrequency[start];
+        }
+        start = start + direction;
+        var oscillator = audioCtx.createOscillator();
+        var gainNode = audioCtx.createGain();
+        oscillator.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        oscillator.type = 'sine';
+        oscillator.frequency.value = frequency;
+        gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+        gainNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 0.01);
+        oscillator.start(audioCtx.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1);
+        oscillator.stop(audioCtx.currentTime + 1);
+    });
+})();
+</script>
+            <br>
             <h1 style="color: greenyellow;">CIRleq&微清</h1>
+            <h2>1148246926</h2>
             <h1 style="color: rgb(118, 46, 169);">HTML</h1>
             <img src="https://user-images.githubusercontent.com/126973386/223406272-48697b8c-7454-4e20-b5c5-000ddbdee458.png" alt="图片失效" width="200px">
-            <br>
-            <img src="https://user-images.githubusercontent.com/126973386/223428002-0f108724-88c3-4f03-9f3e-512fb5fd3c59.png" alt="图片" width="500px">
+            <embed src="https://y.qq.com/n/ryqq/player" width="500" height="300" autostart=false>
             <body background="https://user-images.githubusercontent.com/126973386/223406377-258ba963-98b0-44ff-b9aa-8cb21e856d89.jpg">
-            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="300" height="500" allowtransparency="true"></iframe>
-            <h2> 发行日期：2023.3.4/正式日期：2023.3.6 </h2>
+            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="400" height="500" allowtransparency="true"></iframe>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/sakura.js"></script>
+            <br>
+            <script type="text/javascript">
+                onload = function() {
+                    var click_cnt = 0;
+                    var $html = document.getElementsByTagName("html")[0];
+                    var $body = document.getElementsByTagName("body")[0];
+                    $html.onclick = function(e) {
+                        var $elem = document.createElement("b");
+                        $elem.style.color = "#E94F06";
+                        $elem.style.zIndex = 9999;
+                        $elem.style.position = "absolute";
+                        $elem.style.select = "none";
+                        var x = e.pageX;
+                        var y = e.pageY;
+                        $elem.style.left = (x - 10) + "px";
+                        $elem.style.top = (y - 20) + "px";
+                        clearInterval(anim);
+                        switch (++click_cnt) {
+                            case 10:
+                                $elem.innerText = "OωO";
+                                break;
+                            case 20:
+                                $elem.innerText = "(๑•́ ∀ •̀๑)";
+                                break;
+                            case 30:
+                                $elem.innerText = "(๑•́ ₃ •̀๑)";
+                                break;
+                            case 40:
+                                $elem.innerText = "(๑•̀_•́๑)";
+                                break;
+                            case 50:
+                                $elem.innerText = "（￣へ￣）";
+                                break;
+                            case 60:
+                                $elem.innerText = "(╯°口°)╯(┴—┴";
+                                break;
+                            case 70:
+                                $elem.innerText = "૮( ᵒ̌皿ᵒ̌ )ა";
+                                break;
+                            case 80:
+                                $elem.innerText = "╮(｡>口<｡)╭";
+                                break;
+                            case 90:
+                                $elem.innerText = "( ง ᵒ̌皿ᵒ̌)ง⁼³₌₃";
+                                break;
+                            case 100:
+                            case 101:
+                            case 102:
+                            case 103:
+                            case 104:
+                            case 105:
+                                $elem.innerText = "(ꐦ°᷄д°᷅)";
+                                break;
+                            default:
+                                $elem.innerText = "";
+                                break;
+                        }
+                        $elem.style.fontSize = Math.random() * 10 + 8 + "px";
+                        var increase = 0;
+                        var anim;
+                        setTimeout(function() {
+                            anim = setInterval(function() {
+                                if (++increase == 150) {
+                                    clearInterval(anim);
+                                    $body.removeChild($elem);
+                                }
+                                $elem.style.top = y - 20 - increase + "px";
+                                $elem.style.opacity = (150 - increase) / 120;
+                            }, 8);
+                        }, 70);
+                        $body.appendChild($elem);
+                    };
+                };
+                </script>
+                <br>        
+            <span id="webtime"></span>
+<script type="text/javascript">function show_runtime() {
+        window.setTimeout("show_runtime()", 1000);
+        X = new Date("3/6/2023 23:59:59");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+        document.getElementById("webtime").innerHTML = "网站已运行了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+    }
+    show_runtime();
+</script>
+            <br />
             <div class="foot">
+                Copyright © 2021 版权所有
+                <br>
                 Github © 2023 版权所有
                 <h5 style="color: white;">站长QQ：1148246926；站长是ikun，联系站长请先发kun图！</h5>
                 <h5 style="color: white;">微清：提供技术服务支持</h5>
