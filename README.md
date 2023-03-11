@@ -54,6 +54,11 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 })();
 </script>
             <br>
+            <script>
+                var name = prompt("要怎么称呼您呢？");
+                alert("您好："+name);
+            </script>
+            <br>
             <h1 style="color: greenyellow;">CIRleq&微清</h1>
             <h2 style="color: rgb(118, 46, 169);">点击任意处有惊喜(不稳定)</h2>
             <img src="https://user-images.githubusercontent.com/126973386/223406272-48697b8c-7454-4e20-b5c5-000ddbdee458.png" alt="图片失效" width="200px">
@@ -62,6 +67,9 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
             <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="400" height="500" allowtransparency="true"></iframe>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/sakura.js"></script>
             <br>
+            <script>
+                alert('由于考级原因，网站暂时停止维护\n2023.3.20恢复更新\n--3.11');
+            </script>
             <script type="text/javascript">
                 onload = function() {
                     var click_cnt = 0;
