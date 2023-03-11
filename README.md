@@ -1,3 +1,4 @@
+# 微清，小美我恨你
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -156,9 +157,8 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 </script>
             <br />
             <div class="foot">
-                Copyright © 2021 版权所有
-                <br>
                 Github © 2023 版权所有
+                <br>
                 <h5 style="color: white;">站长QQ：1148246926；站长是ikun，联系站长请先发kun图！</h5>
                 <h5 style="color: white;">微清：提供技术服务支持</h5>
                 <h5 style="color: white;">大胆的说一声：微清YYDS！</h5>
@@ -167,3 +167,4 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
         </div>
     </body>
 </html>
+/*上次那个爱盗代码的，要是再被我看到，我直接把你吊起来打！*/
