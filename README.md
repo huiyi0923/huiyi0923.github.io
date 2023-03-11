@@ -1,4 +1,4 @@
-# 微清，小美我恨你
+# 小美我恨你
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="box">
-            <button id="button">经过我</button>
+            <button id="button">首页(点我有惊喜)</button>
 <script>
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 (function () {
@@ -151,7 +151,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
         c = (b - B) * 60;
         C = Math.floor((b - B) * 60);
         D = Math.floor((c - C) * 60);
-        document.getElementById("webtime").innerHTML = "网站已运行了: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        document.getElementById("webtime").innerHTML = "网站已安全运行: " + A + "天" + B + "小时" + C + "分" + D + "秒"
     }
     show_runtime();
 </script>
