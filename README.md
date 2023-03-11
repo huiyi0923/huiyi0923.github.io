@@ -55,8 +55,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 </script>
             <br>
             <h1 style="color: greenyellow;">CIRleq&微清</h1>
-            <h2>1148246926</h2>
-            <h1 style="color: rgb(118, 46, 169);">HTML</h1>
+            <h2 style="color: rgb(118, 46, 169);">点击任意处有惊喜(不稳定)</h2>
             <img src="https://user-images.githubusercontent.com/126973386/223406272-48697b8c-7454-4e20-b5c5-000ddbdee458.png" alt="图片失效" width="200px">
             <embed src="https://y.qq.com/n/ryqq/player" width="500" height="300" autostart=false>
             <body background="https://user-images.githubusercontent.com/126973386/223406377-258ba963-98b0-44ff-b9aa-8cb21e856d89.jpg">
