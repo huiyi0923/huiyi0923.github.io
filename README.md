@@ -59,7 +59,21 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
                 alert("您好："+name);
             </script>
             <br>
-            <h1 style="color: greenyellow;">CIRleq&微清</h1>
+            <h4>您好：访问者！</h4>
+            <td class="BS0111">
+                <form method="GET" action="search.asp?action=search" target="_blank">
+                &nbsp;<img border="0" src="pic/fle.gif">&nbsp;搜索范围：<select size="1" name="s_type">
+                    <option value="">所有贴子</option>
+                    <option value="topic" selected>贴子标题</option>
+                    <option value="content">贴子正文</option>
+                </select>&nbsp;搜索方式：<select size="1" name="judge_type">
+                    <option selected value="1">精确</option>
+                    <option value="0">模糊</option>
+                </select>&nbsp;关键词<font color="#808080">(可用空格分开)</font>：<input type="text" name="key" value="请输入关键词" style="width:150px;" onFocus="if(this.value=='请输入关键词'){this.value='';}" onBlur="if(this.value==''){this.value='请输入关键词';}">&nbsp;<input type="submit" value="搜索" name="B1" style="border:0;background-color:transparent;background:url(/mis/images/obtn_60.gif);width:60px;height:21px;cursor:pointer;" onmouseout = "javascript:this.style.backgroundPosition = '0 0';" onMouseOver="javascript:this.style.backgroundPosition = '0 -21px';"><input type="hidden" name="action" size="20" value="search">&nbsp;
+                <input type="button" value="返回" name="B1" style="border:0;background-color:transparent;background:url(/mis/images/obtn_60.gif);width:60px;height:21px;cursor:pointer;" onmouseout = "javascript:this.style.backgroundPosition = '0 0';" onMouseOver="javascript:this.style.backgroundPosition = '0 -21px';" onclick="javascript:history.go(-1);">
+                </form>
+            </td> 
+            <h1 style="color: rgb(121, 219, 220);">微清让世界遇见你！</h1>
             <h2 style="color: rgb(118, 46, 169);">点击任意处有惊喜(不稳定)</h2>
             <img src="https://user-images.githubusercontent.com/126973386/223406272-48697b8c-7454-4e20-b5c5-000ddbdee458.png" alt="图片失效" width="200px">
             <embed src="./那一瞬间.m4a" width="500" height="300" autostart=false>
@@ -68,7 +82,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
             <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/sakura.js"></script>
             <br>
             <script>
-                alert('由于考级原因，网站暂时停止维护\n2023.3.20恢复更新\n--3.11');
+                alert('由于考级原因，网站暂时停止维护\n2023.3.20恢复更新\n--3.12');
             </script>
             <script type="text/javascript">
                 onload = function() {
@@ -166,9 +180,9 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
             <div class="foot">
                 Github © 2023 版权所有
                 <br>
-                <h5 style="color: white;">站长QQ：1148246926；站长是ikun，联系站长请先发kun图！</h5>
-                <h5 style="color: white;">微清：提供技术服务支持</h5>
-                <h5 style="color: white;">大胆的说一声：微清YYDS！</h5>
+                <h5>站长QQ：1148246926；站长是ikun，联系站长请先发kun图！</h5>
+                <h5>微清：提供技术服务支持</h5>
+                <h5>大胆的说一声：微清YYDS！</h5>
             <br>
             <a href="https://www.baidu.com" target="_blank">点我：搜💌索</a>
         </div>
