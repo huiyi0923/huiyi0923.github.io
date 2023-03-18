@@ -82,7 +82,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
                 alert("您好："+name);
             </script>
             <ul>
-                <li><a class="active" href="http://127.0.0.1:5500/indexth2.html">My首页</a></li>
+                <li><a class="active" href="https://huiyi0923.github.io/shuoye">My首页</a></li>
                 <li><a href="https://huiyi0923.github.io/">旧网址</a></li>
                 <li><a href="http://127.0.0.1:5500/indexth.html">悬浮球</a></li>
                 <li><a href="http://127.0.0.1:5500/indexth3.html">关于我们</a></li>
