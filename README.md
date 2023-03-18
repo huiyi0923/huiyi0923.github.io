@@ -102,6 +102,12 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
             <embed src="./那一瞬间.m4a" width="500" height="300" autostart=false>
             <body background="./bg.jpg">
             <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tw&skin=pitaya" frameborder="1" width="400" height="500" allowtransparency="true"></iframe>
+            <ul>
+                <li><a class="active" href="http://127.0.0.1:5500/indexth2.html">My首页</a></li>
+                <li><a href="https://huiyi0923.github.io/">旧网址</a></li>
+                <li><a href="http://127.0.0.1:5500/indexth.html">悬浮球</a></li>
+                <li><a href="http://127.0.0.1:5500/indexth3.html">关于我们</a></li>
+            </ul>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/sakura.js"></script>
             <br>
             <script>
