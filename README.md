@@ -1,4 +1,5 @@
 # 小美我恨你
+<!--我艹你*，TM天天扒我源码，活腻了是不是-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -217,4 +218,3 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
         </div>
     </body>
 </html>
-<!--上次那个爱盗代码的，要是再被我看到，我直接把你吊起来打！-->
