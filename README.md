@@ -39,6 +39,46 @@
                 bottom: 0;
                 text-align: center;
             }
+            
+            .dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #111;
+}
         </style>
     </head>
     <body>
@@ -88,6 +128,14 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
                 <li><a href="http://huiyi0923.github.io/indexth.html">悬浮球</a></li>
                 <li><a href="http://huiyi0923.github.io/indexth3.html">关于我们</a></li>
             </ul>
+            
+            <div class="dropdown">
+                <button class="dropbtn">微清活动</button>
+                <div class="dropdown-content">
+                <a href="https://huiyi0923.github.io/indexth2.html">广告招租(向下滑)</a>
+                <a href="https://huiyi0923.github.io/indexth5.html">微清悬赏令1</a>
+                </div>
+            </div>
             <br>
             <h4>您好：访问者！</h4>
             <td class="BS0111">
