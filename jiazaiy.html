@@ -4,6 +4,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>微清网络引导页</title>
 <link href="yingdaoy.css" type="text/css" rel="stylesheet" />
+ 
+ <script>
+		(function(doc, win) {
+		  var docEl = doc.documentElement,
+		  resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		  recalc = function() {
+			var clientWidth = docEl.clientWidth;
+			if(!clientWidth) return;
+			if(clientWidth >= 750) {
+			  docEl.style.fontSize = '100px';
+			} else {
+			  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			}
+		  };
+		  if(!doc.addEventListener) return;
+		  win.addEventListener(resizeEvt, recalc, false);
+		  doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 
