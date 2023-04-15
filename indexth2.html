@@ -77,9 +77,33 @@ ul {
     padding: 20px;
     margin-top: 20px;
     }
+/*分页*/
+.center {
+  text-align: center;
+}
 
-	
+.pagination {
+  display: inline-block;
+}
 
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+	    
 	    /*手机自动适应*/
 	    	<script>
 		(function(doc, win) {
@@ -103,10 +127,13 @@ ul {
     </style>
 </head>
 <body>
-	<div class="header">
+<img src="https://user-images.githubusercontent.com/126973386/232083326-e35bb831-f31b-4039-8348-c527dc38e2f2.jpg" alt="" width="35">
+欢迎"未登录"用户
+	
+<div class="header">
 	<h1>微清网络(清白网络)</h1>
-    <p>Microclear network</p>
-	</div>
+	<p>Microclear network</p>
+</div>
 	
 	<ul>
           <li><a href="http:///huiyi0923.github.io/indexth2.html">首页</a></li>
@@ -150,6 +177,18 @@ ul {
  </div>
 <meta name="viewport"
     content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+
+<div class="center">
+  <div class="pagination">
+  <a href="#">«</a>
+  <a href="#" class="active">1</a>
+  <a href="#" >2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">»</a>
+  </div>
+</div>
 
 </body>
 	
