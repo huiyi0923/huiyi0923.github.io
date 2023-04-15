@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>微清网络引导页</title>
-<link href="http://hovertree.com/texiao/html5/index/hovertreewelcome.css" type="text/css" rel="stylesheet" />
+<link href="yingdaoy.css" type="text/css" rel="stylesheet" />
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 
@@ -26,7 +26,7 @@
 <source src="CMJ - 告白之夜.mp3" type="audio/mpeg">
 您的浏览器不支持播放音乐。请用支持html5的浏览器打开,例如chrome或火狐或者新版IE等。
 <br />
-</audio><script type="text/javascript" src="http://hovertree.com/texiao/html5/index/hovertreewelcome.js">
+</audio><script type="text/javascript" src="yingdaoy.js">
 </script>
 <script type="text/javascript">
 
@@ -49,10 +49,6 @@ settings.dampening = 0.25;
 settings.tension = 0.98;
 
 Math.TWO_PI = Math.PI * 2;
-
-// ========================================================================================
-// Oscillator 何问起
-// ----------------------------------------------------------------------------------------
 
 function Oscillator(options) {
 this.init(options || {});
@@ -84,9 +80,6 @@ return value;
 
 })();
 
-// ========================================================================================
-// Tendril hovertree.com
-// ----------------------------------------------------------------------------------------
 
 function Tendril(options) {
 this.init(options || {});
@@ -179,8 +172,6 @@ ctx.closePath();
 };
 
 })();
-
-// ----------------------------------------------------------------------------------------
 
 function init(event) {
 
@@ -275,7 +266,7 @@ case 32:
 save();
 break;
 default:
-// console.log(event.keyCode); hovertree.com
+
 }
 }
 
@@ -332,8 +323,6 @@ logo.height / 2
 
 window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
 
-// form.input.value = buffer.toDataURL().substr(22);
-// form.submit(); hovertree.com
 }
 
 window.requestAnimFrame = (function () {
@@ -374,7 +363,6 @@ if (window.DEBUG) {
 
 var gui = new dat.GUI();
 
-// gui.add(settings, 'debug');
 settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
 settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
 settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
