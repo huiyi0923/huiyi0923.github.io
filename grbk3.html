@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>剩下的生活时光（第3页）</h1>
+  <p>我将会在这记录我的生活。</p>
+</div>
+
+<div class="topnav">
+  <a href="https://huiyi0923.github.io/grbk1.html">我的首页</a>
+  <a href="https://huiyi0923.github.io/grbk2.html">我的分页</a>
+  <a href="https://huiyi0923.github.io/grbk3.html">我的分页2</a>
+  <a href="#" style="float:right">等待添加</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>剩下的一张小灰兔图片</h2>
+      <h5>与小灰兔在一起的时光,2021/7/9摄</h5>
+      <img src="小灰兔图片2.jpg" alt="" height:200px width="400">
+      <p>小灰兔时光</p>
+      <p>我一开始与兔子在一起时是2020/11/13那是我买兔子的时候，兔妈妈生了好多孩子，这应该是第4批孩子，可惜他们都已经离开了我😪</p>
+    </div>
+    <div class="card">
+      <h2>剩下的月亮图片</h2>
+      <h5>拍月亮🌙的时光,2022/5~7月摄</h5>
+      <img src="月亮图片2.jpg" alt="" height:200px width="400">
+      <p>月亮图片应发的感想</p>
+      <p>你们都可以想一想，3~5年前的夏天，你们都在做什么，可是我想到这我怀念当时的时光可惜再也回不去了，所以我们一定要珍惜时光</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>关于我自己3</h2>
+      <div class="fakeimg" style="height:100px;">等待添加图片……</div>
+      <p>我学做网站后看见别人有软件我又想去做软件，我觉得我就是那个别人做什么我做什么的“机器人”，还是这句话：“蹭年轻，早犯病！”</p>
+    </div>
+    <div class="card">
+      <h3>剩下的美景图片</h3>
+      <img src="月亮图片3.jpg" alt="" height="130">
+      <img src="月亮图片4.jpg" alt="" height="130">
+      <img src="月亮图片5.jpg" alt="" height="130">
+    </div>
+    <div class="card">
+      <h3>To contact me</h3>
+      <p>如站内侵犯了您权益，请发邮件到1148246926@qq.com邮箱，本站将及时处理，并予以回复！</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>图片/网站版权©：微清网络 所有</h4>
+</div>
+
+</body>
+</html>

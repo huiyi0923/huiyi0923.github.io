@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My 生活博客</h1>
+  <p>我将会在这记录我的生活。</p>
+</div>
+
+<div class="topnav">
+  <a href="https://huiyi0923.github.io/grbk1.html">我的首页</a>
+  <a href="https://huiyi0923.github.io/grbk2.html">我的分页</a>
+  <a href="https://huiyi0923.github.io/grbk3.html">我的分页2</a>
+  <a href="#">等待添加</a>
+  <a href="#" style="float:right">等待添加</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>每年的夏天</h2>
+      <h5>我拍到的月亮🌙,2022/5~7月摄</h5>
+      <img src="月球图片1.jpg" alt="" height:200px width="400">
+      <p>我为什么会拍月亮</p>
+      <p>因为每年夏天我还不会自己制作东西，于是就比较闲，就买了个望远镜，整天都在拍月亮，可惜我再也无法回到那个时候了，就比如我现在正在干的事情</p>
+    </div>
+    <div class="card">
+      <h2>每年的夏天2</h2>
+      <h5>我的小灰兔,2021/7/9摄</h5>
+      <img src="小灰兔图片1.jpg" alt="" height:200px width="400">
+      <p>每日夏天我带着小灰兔</p>
+      <p>2年前我带着小灰兔一起去公园玩，时间为晚上，那时天气都比较hot，但是我却再也见不到我的小灰兔了，因为他们都在2023/2月时中XG死了😭</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>关于我自己</h2>
+      <div class="fakeimg" style="height:100px;">等待添加图片……</div>
+      <p>我是一个男生，未成年，我总爱说：“蹭年轻，早犯病！”</p>
+    </div>
+    <div class="card">
+      <h3>我喜欢的明星</h3>
+      <img src="坤坤图片1.jpg" alt="" height="130">
+      <img src="坤坤图片2.jpg" alt="" height="130">
+      <img src="坤坤图片3.JPEG" alt="" height="110">
+    </div>
+    <div class="card">
+      <h3>To contact me</h3>
+      <p>如站内侵犯了您权益，请发邮件到1148246926@qq.com邮箱，本站将及时处理，并予以回复！</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>图片/网站版权©：微清网络 所有</h4>
+</div>
+
+</body>
+</html>
