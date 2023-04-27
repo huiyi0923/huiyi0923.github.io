@@ -12,9 +12,30 @@
     * {
         text-align: center;
     }
+        
+    <script>
+    (function(doc, win) {
+    var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function() {
+    var clientWidth = docEl.clientWidth;
+    if(!clientWidth) return;
+    if(clientWidth >= 750) {
+	    docEl.style.fontSize = '100px';
+		} else {
+		docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		}
+	};
+	if(!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+    </script>
+        
     </style>
 </head>
 <body>
+<body background="https://api.r10086.com/樱道随机图片api接口.php?图片系列=动漫综合1">
     <h1 style="color: rgb(122, 122, 214);">微清网络-micro qing network技术支持区</h1>
     <img src="加好友2.jpg" alt="" width="400">
     <br>
