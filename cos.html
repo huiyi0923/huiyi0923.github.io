@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>随机小姐姐图片</title>
+  <style>
+    /* 自定义CSS样式 */
+    body {
+      background-color: #f5f5f5;
+    }
+    .main {
+      width: 90vw;
+      margin: 30px auto;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+  <!-- 引入jQuery库 -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 引入mdui框架依赖的CSS和JS文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <h1>随机小姐姐图片</h1>
+    <p>点击下方按钮查看</p>
+    <img id="player" src="http://xinnai.521314.love/API/ksxjjtp.php?type=image">
+    <br>
+      <div class="mdui-card-actions">
+        <button id="toggle-auto-switch" class="mdui-btn mdui-btn-raised mdui-ripple" onclick="toggleImage()">自动切换下一张图</button>
+        <button id="random-btn" class="mdui-btn mdui-btn-raised mdui-ripple" onclick="randomImage()">下一张</button>
+  </div>
+
+  <script>
+    // 随机选取小姐姐图片
+    function randomImage() {
+      var player = $('#player');
+      player.attr('src', 'http://xinnai.521314.love/API/ksxjjtp.php?type=image&random=' + Math.random());
+    }
+
+    // 切换自动切换下一张图的状态
+    var autoSwitchTimer = null;
+    function toggleAutoSwitch() {
+      var toggleButton = $('#toggle-auto-switch');
+      if (autoSwitchTimer) {
+        clearInterval(autoSwitchTimer);
+        autoSwitchTimer = null;
+        toggleButton.text('自动切换');
+      } else {
+        autoSwitchTimer = setInterval(function() {
+          randomImage();
+        }, 5000);
+        toggleButton.text('停止切换');
+      }
+    }
+
+    // 在页面加载后绑定按钮事件
+    $(document).ready(function() {
+      $('#random-btn').click(randomImage);
+      $('#toggle-auto-switch').click(toggleAutoSwitch);
+      toggleAutoSwitch(); // 自动切换到下一张图片
+    });
+  </script>
+</body>
+</html>
