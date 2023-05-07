@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>微清 API，免费接口</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 <style>
     body{ background:#f0efef}
 
@@ -25,7 +26,41 @@
         background-color: #57b764;
         padding: 10px;
         }
+        marquee{
+    font-size:20px;
+    animation:colorword 4s infinite;
+    -webkit-animation:colorword 4s infinite;
+    }
+    @keyframes colorword
+    {
+    0%{ color:rgb(234, 162, 162); }
+    20%{ color:rgb(141, 141, 215); }
+    40%{ color:rgb(152, 152, 117); }
+    60%{ color:rgb(141, 197, 141); }
+    80%{ color:#FF83FA; }
+    100%{ color:#EEAEEE; }
+    }
+
+
 </style>
+<!--
+<script>
+    !function(n) {
+        var e = n.document,
+        t = e.documentElement,
+        i = 640,
+        d = i / 100,
+        o = "orientationchange" in n ? "orientationchange": "resize",
+        a = function() {
+            var n = t.clientWidth || 320;
+            n > 640 && (n = 640),
+            t.style.fontSize = n / d + "px"
+        };
+        e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+    } (window);
+    </script>
+    -->
+
 </head>
 <body>
     <div class="header">
@@ -35,12 +70,12 @@
         <p style="color: #ffffff;">走过生命的四季，愿快乐在你的日子里涅槃成诗，一行复一行；看过岁月的繁华，愿好运在你的生活中翩跹成舞，一遍又一遍。立夏时节</p>
         <p style="color: #ffffff;">Through the four seasons of life, may the joy in your days nirvana into poems, a line after line; Seen years, expecting to good luck in your life into a dance, over and over again. The summer season</p>
     </div>
+    <marquee>微清API接口，为圈钱而生</marquee>
     <br>
     <h2>网站正在添加……</h2>
     <br>
     <div class="footer1">
         <p>狗🐕都不备案🤭</p>
-        <p>I am a money pit king(去翻译)</p>
         <span id="webtime"></span>
         <script type="text/javascript">function show_runtime() {
                 window.setTimeout("show_runtime()", 1000);
