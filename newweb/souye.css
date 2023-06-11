@@ -1,50 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="souye.css">
-    <title>消息</title>
-    <style>
-        *{
-            font-family:FangSong_GB2312;
-        }
-        .taito{
-            height: 50px;
-            background-color: rgb(221, 206, 206);
-            text-align: center;
-            line-height: 50px;
-        }
-        .xiaoxi a{
-            height: 60px;
-            border-top: 3px solid #e1e1e1;
-            text-decoration: none; 
-            color: #bf5252;
-            display: block;
-            line-height: 60px;
-            margin: 10px;
-        }
-        .xiaoxi a:hover{
-            background-color: rgb(198, 198, 198);
-        }
-    </style>
-</head>
-<body>    
-    <div class="box">
-        <ul>
-            <li><a href="https://huiyi0923.github.io/newweb/newindex.html" target="_blank">首页</a></li>
-            <li><a href="https://huiyi0923.github.io/newweb/newmessage.html" target="_blank">消息</a></li>
-            <li><a href="https://huiyi0923.github.io/newweb/Personalcenter.html" target="_blank">我的</a></li>
-        </ul>
-    </div>
-    <br>
-    <div class="taito" style="color: rgb(255, 255, 255);">
-        消息列表
-    </div>
-    <br>
-    <div class="xiaoxi">
-        <a href="#" onclick="alert('暂无消息oh主人！喵~~')">官方消息</a>
-        <a href="#" style="color: #6fd55d;" onclick="alert('暂无消息oh主人！喵~~')">系统消息🧧</a>
-    </div>
-</body>
-</html>
+*{
+    margin: 0;
+    padding: 0;
+    font-family:FangSong_GB2312;
+}
+body{ 
+    background:#ffffff
+}
+.box li{
+    float: left;
+}
+.box{
+    height: 40px;
+    border-bottom: 1px solid #d6d5d5;
+    background-color: rgb(182, 215, 242);
+    bottom: 0;
+}
+.box ul a{
+    padding: 0 20px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+.box ul a:hover{
+    background-color: #f2f4f6;
+    color: #eaae6f;
+}
+ul{
+    list-style: none;
+    height: 80%;
+}
+.box2{
+    text-align: center;
+    height: 40px;
+}
