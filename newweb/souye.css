@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:FangSong_GB2312;
+}
+body{ 
+    background:#ffffff
+}
+.box li{
+    float: left;
+}
+.box{
+    height: 40px;
+    border-top: 3px solid #ff8500;
+    border-bottom: 1px solid #d6d5d5;
+    background-color: rgb(237, 236, 236);
+    bottom: 0;
+}
+.box ul a{
+    padding: 0 20px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+.box ul a:hover{
+    background-color: #b1c4e9;
+    color: #ff8400;
+}
+ul{
+    list-style: none;
+    height: 80%;
+}
+.box2{
+    text-align: center;
+    height: 40px;
+}
