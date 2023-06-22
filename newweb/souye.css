@@ -10,10 +10,11 @@ body{
     float: left;
 }
 .box{
+    position: absolute;
+    bottom: 0;
     height: 40px;
     border-bottom: 1px solid #d6d5d5;
-    background-color: rgb(182, 215, 242);
-    bottom: 0;
+    background-color: rgb(201, 204, 246);
 }
 .box ul a{
     padding: 0 20px;
@@ -35,4 +36,40 @@ ul{
 .box2{
     text-align: center;
     height: 40px;
+}
+
+.sybg .beijing{
+    line-height: 230px;
+    height: 200px;
+    background-image: url(https://huiyi0923.github.io/data/动漫页眉图.jpg)
+}
+/* .grzx{
+    position: absolute;
+    top: 1px;
+    height: 30px;
+    width: 100%;
+    background-color: #dc3e3e;
+    line-height: 30px;
+}
+
+.father{
+    height: 60px;
+    position: relative;
+    background-color: #4c4c4c;
+
+} */
+
+.taito{
+    height: 50px;
+    background-color: rgb(221, 206, 206);
+    text-align: center;
+    line-height: 50px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.gonggao{
+    height: 35px;
+    background-image: url(https://huiyi0923.github.io/data/动漫页眉图2.jpg);
+    line-height: 35px;
 }
