@@ -73,3 +73,9 @@ ul{
     background-image: url(https://huiyi0923.github.io/data/动漫页眉图2.jpg);
     line-height: 35px;
 }
+
+.father{
+    width: 500px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
