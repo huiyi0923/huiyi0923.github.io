@@ -18,6 +18,16 @@ body {
     background-color: #ffffff;
     box-shadow: 0 3px 5px #ededed;
   }
+  .tobu .caidan2 {
+    position: relative;
+  }
+  .tobu svg {
+    display: inline-block;
+    position: absolute;
+    top: 6.13333333vh;
+    right: 13.33333333vh;
+    font-size: large;
+  }
 }
 .tobu {
   width: 100%;
@@ -25,6 +35,9 @@ body {
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 3px 5px #ededed;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .tobu .caidan {
   position: absolute;
@@ -44,6 +57,7 @@ body {
   background-color: #ececec;
   border: none;
   border-radius: 10px;
+  margin-top: 2.13333333vh;
 }
 .tobu .caidan {
   line-height: 10.66666667vh;
@@ -124,6 +138,11 @@ body {
   height: 18.66666667vh;
   animation: log 1s infinite;
 }
+.tobu svg {
+  position: absolute;
+  left: 21.33333333vh;
+  top: 6.53333333vh;
+}
 .xiabu3 {
   /* text-align: center; */
   width: 50px;
@@ -151,21 +170,15 @@ body {
   width: 320px;
   box-shadow: 1px 2px 10px 2px #b2b2b2;
 }
-.xcj {
+.xcj svg {
   position: fixed;
-  right: 2.66666667vh;
-  bottom: 5.33333333vh;
+  right: 5.33333333vh;
+  bottom: 13.33333333vh;
   width: 8vh;
   height: 8vh;
   background-color: #74698e;
   border-radius: 50%;
-  box-shadow: 2px 3px 10px 5px #5757578c;
-}
-.xcj i {
-  color: #fff;
-  margin-left: 2.72vh;
-  vertical-align: middle;
-  text-align: center;
+  box-shadow: 2px 3px 10px 5px #575757d1;
 }
 .banquan {
   width: 100%;
@@ -173,6 +186,7 @@ body {
   color: #fff;
   text-align: center;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 .banquan p a:nth-child(1) {
   color: #b2b2b2;
@@ -207,4 +221,26 @@ body {
   float: right;
   font-size: 4vh;
   line-height: 50px;
+}
+.daoh {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 13.33333333vh;
+  background-color: #635a7cf7;
+  border-radius: 20px;
+  line-height: 10.66666667vh;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: -20px;
+}
+.daoh a {
+  color: #ffffff;
+  margin-left: 13.33333333vh;
+}
+.daoh a:nth-child(1) {
+  color: #ffffff;
+  margin-left: 0;
 }

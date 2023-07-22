@@ -25,3 +25,8 @@ document.querySelector('.xcj').addEventListener('click',function(){
 // if (offsetTop>=50){
 //     box4.style.display='block'
 // }
+
+document.querySelector('.tobu svg').addEventListener('click',function(){
+    location.reload()
+    alert('刷新成功')
+})
