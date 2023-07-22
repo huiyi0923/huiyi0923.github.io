@@ -30,3 +30,23 @@ document.querySelector('.tobu svg').addEventListener('click',function(){
     location.reload()
     alert('刷新成功')
 })
+
+
+const bod=document.querySelector('body')
+const svg1=document.querySelector('.tobu svg')
+let bl=0
+const but=document.querySelector('.wq')
+but.addEventListener('click',()=>{
+    bod.style.backgroundColor='#000'
+    bod.style.color='#fff'
+    but.innerHTML='白天'
+    svg1.style.color='#000'
+    bl+=1
+    if (bl>1){
+        bod.style.backgroundColor='#fff'
+        bod.style.color='#000'
+        but.innerHTML='黑夜'
+        svg1.style.color='#000'
+        bl=0
+    }
+})
