@@ -67,8 +67,35 @@ if (yonghm===null||mima===null){
     dlsz.style.backgroundColor='#4ae73c'
 }
 
-document.querySelector('.tobu .xcj2 span').addEventListener('click',(e)=>{
-    if (yonghm!=null||mima!=null){
+// document.querySelector('.tobu .xcj2 span').addEventListener('click',(e)=>{
+//     if (yonghm!=null||mima!=null){
+//         e.preventDefault()
+//     }
+// })
+
+document.querySelector('.tobu span').addEventListener('click',function(){
+    document.querySelector('.tobu .ycd').style.display='block'
+})
+
+document.querySelector('.tobu .ycd span').addEventListener('click',function(){
+    document.querySelector('.tobu .ycd').style.display='none'
+})
+
+document.querySelector('.tobu .ycd p:nth-child(1)').addEventListener('click',function(e){
+    if (yonghm===null||mima===null){
         e.preventDefault()
+        alert('你没有登录')
+    }
+})
+
+document.querySelector('.tobu .xcj2 .ycd .zux').addEventListener('click',function(e){
+    if (yonghm===null||mima===null){
+        e.preventDefault()
+        alert('你没有登录，无法注销！')
+    }else{
+        localStorage.removeItem('yonghm')
+        localStorage.removeItem('mima')
+        alert('注销成功！')
+        location.reload()
     }
 })
