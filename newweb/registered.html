@@ -74,6 +74,8 @@
           <input type="text" class="form-control username">
         </div>
         <div class="mb-3">
+          <label for="QQ" class="form-label">你的QQ号</label>
+          <input type="QQ" class="form-control QQ">
           <label for="password" class="form-label">密码</label>
           <input type="password" class="form-control password">
           <label for="password2" class="form-label">再次确认密码</label>
@@ -103,6 +105,7 @@
       const username = document.querySelector('.username').value
       const password = document.querySelector('.password').value
       const password2 = document.querySelector('.password2').value
+      const QQ = document.querySelector('.QQ').value
       if (username.length < 4) {
         alertFn('用户名必须大于等于4位', false)
         return 
@@ -118,13 +121,19 @@
       }else if (password2 !=password) {
         alertFn('两次输入的密码不一致', false)
         return 
+      }else if (QQ.length<5) {
+        alertFn('QQ类型错误 请填入真的QQ号', false)
+        return 
       }else{
         alertFn('注册成功', true)
         localStorage.setItem('yonghm',username)
         localStorage.setItem('mima',password)
+        localStorage.setItem('QQ',QQ)
+        const date=new Date()
+        localStorage.setItem('zcsj',(date.getFullYear(),date.getMonth()+1,date.getDate()))
         setTimeout(() => {
             location.href='./login.html'
-      }, 2000)
+      }, 1500)
       }
       
     })

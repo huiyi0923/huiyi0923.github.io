@@ -77,6 +77,8 @@
           <input type="text" class="form-control username">
         </div>
         <div class="mb-3">
+          <label for="QQ" class="form-label">修改QQ</label>
+          <input type="QQ" class="form-control QQ">
           <label for="password" class="form-label">修改密码</label>
           <input type="password" class="form-control password">
         </div>
@@ -104,6 +106,7 @@
     document.querySelector('.btn-login').addEventListener('click', () => {
       const username = document.querySelector('.username').value
       const password = document.querySelector('.password').value
+      const QQ = document.querySelector('.QQ').value
       let yonghm=localStorage.getItem('yonghm')
       let mima=localStorage.getItem('mima')
       if (username.length < 4) {
@@ -118,10 +121,14 @@
       }else if (password.length > 8) {
         alertFn('密码最多8位', false)
         return 
+      }else if (QQ.length<5) {
+        alertFn('QQ类型错误 请填入真的QQ号', false)
+        return 
       }else{
         alertFn('修改成功', true)
         localStorage.setItem('yonghm',username)
         localStorage.setItem('mima',password)
+        localStorage.setItem('QQ',QQ)
         setTimeout(() => {
             location.href='./index2.html'
       }, 1500)
