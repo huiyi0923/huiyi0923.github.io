@@ -262,7 +262,7 @@ body {
   border: none;
   height: 5.33333333vh;
 }
-.tobu .xcj2 span:hover {
+.tobu .xcj2 span:nth-child(1):hover {
   box-shadow: 1px 2px 10px 3px #b5b5b5;
 }
 .tobu .ycd {
@@ -276,15 +276,21 @@ body {
   color: #fff;
   display: none;
   cursor: pointer;
+  box-shadow: 1px 2px 10px 3px #666666;
 }
 .tobu .ycd p a {
   color: #fff;
 }
 .tobu .ycd span {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 2px;
+  top: 2px;
+  font-size: small;
+  background-color: #6fd13a;
 }
 .tobu .ycd p a:hover {
   color: #7cb6e6;
+}
+.tobu .ycd .zux {
+  color: #e37a7a;
 }
