@@ -130,7 +130,7 @@
         localStorage.setItem('mima',password)
         localStorage.setItem('QQ',QQ)
         const date=new Date()
-        localStorage.setItem('zcsj',(date.getFullYear(),date.getMonth()+1,date.getDate()))
+        localStorage.setItem('zcsj',(date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate()+'.'+date.getHours()+':'+date.getMinutes()))
         setTimeout(() => {
             location.href='./login.html'
       }, 1500)
