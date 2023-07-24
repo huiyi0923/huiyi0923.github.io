@@ -1,3 +1,5 @@
+
+
 const box=document.querySelector('.yccd')
 document.querySelector('.tobu .caidan2 button').addEventListener('click',function(){
     box.style.left='0'
@@ -72,7 +74,6 @@ if (yonghm===null||mima===null){
 //         e.preventDefault()
 //     }
 // })
-
 document.querySelector('.tobu span').addEventListener('click',function(){
     document.querySelector('.tobu .ycd').style.display='block'
 })
@@ -101,3 +102,29 @@ document.querySelector('.tobu .xcj2 .ycd .zux').addEventListener('click',functio
         location.reload()
     }
 })
+
+
+// // 个人中心区
+// document.querySelector('.btn3').addEventListener('click',function(){
+//     if (yonghm===null||mima===null){
+//         document.querySelector('.yhtx p').innerHTML='未登录，请尽快登录'
+//     }
+//     else{
+//         document.querySelector('.yhtx p').innerHTML=`${yonghm}`
+//         this.style.display='none'
+//     }
+// })
+
+// document.querySelector('.zhxx').addEventListener('click',function(e){
+//     if (yonghm===null||mima===null){
+//         e.preventDefault()
+//         alert('你没有登录')
+//     }
+// })
+
+// // 个人信息
+
+// document.querySelector('.btn4').addEventListener('click',()=>{
+//     document.querySelector('.zsnc').innerHTML=`你的账号：${yonghm}`
+//     document.querySelector('.btn4').style.display='none'
+// })
