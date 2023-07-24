@@ -95,6 +95,8 @@ document.querySelector('.tobu .xcj2 .ycd .zux').addEventListener('click',functio
     }else{
         localStorage.removeItem('yonghm')
         localStorage.removeItem('mima')
+        localStorage.removeItem('qdsj')
+        localStorage.removeItem('jb')
         alert('注销成功！')
         location.reload()
     }
