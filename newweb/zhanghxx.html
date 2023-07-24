@@ -98,15 +98,15 @@
     <script src="./index2.js"></script>
     <!-- xxx -->
     <script>
-        let QQ=localStorage.setItem('QQ')
-        let zcsj=localStorage.setItem('zcsj')
+        let QQ1=localStorage.getItem('QQ')
+        let zcsj1=localStorage.getItem('zcsj')
             document.querySelector('.btn4').addEventListener('click',()=>{
                 document.querySelector('.zsnc').innerHTML=`你的账号昵称：${yonghm}`
                 document.querySelector('.btn4').style.display='none'
                 document.querySelector('.yhm').innerHTML=`你的账号密码：${mima}`
                 document.querySelector('.yhm').innerHTML=`你的账号密码：${mima}`
-                document.querySelector('.QQh').innerHTML=`你的QQ账号：${QQ}`
-                document.querySelector('.zcsj').innerHTML=`该账号注册时间：${zcsj}`
+                document.querySelector('.QQh').innerHTML=`你的QQ账号：${QQ1}`
+                document.querySelector('.zcsj').innerHTML=`该账号注册时间：${zcsj1}`
         })
     </script>
 
