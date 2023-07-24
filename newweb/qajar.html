@@ -168,15 +168,16 @@
             e.preventDefault()
             console.log(yhxx2)
             const date1=new Date()
-            if (yonghm===null||mima===null){
-                e.preventDefault()
-                alert('你没有登录,请先登录')
-            }else if (yhxx2=='签到'){
+            // if (yonghm===null||mima===null){
+            //     e.preventDefault()
+            //     alert('你没有登录,请先登录')
+            // }else 
+            if (yhxx2=='签到'){
                 let xzrq=date1.getDate()
                 if (localStorage.getItem('qdsj')===null || localStorage.getItem('qdsj')!=xzrq){
                     p1.innerHTML=`${hf}签到成功，获得金币50枚`
                     localStorage.setItem('qdsj',xzrq)
-                    jingb+=50
+                    jingb=50+(+jingb)
                     // localStorage.setItem('jb',jingb)
                 }else{
                     p1.innerHTML=`${hf}你今天已经签到过了`
@@ -186,9 +187,9 @@
                 p1.innerHTML=`${hf}打工开始，倒计时30秒，不要走开`
                 setTimeout(() => {
                     p1.innerHTML=`${hf}打工成功，获得金币70`
-                    jingb+=70
+                    jingb=70+(+jingb)
                     // localStorage.setItem('jb',jingb)
-                }, 30000)
+                }, 10000)
             }else if (yhxx2=='保存金币'){
                 localStorage.setItem('jb',jingb)
                 p1.innerHTML=`${hf}保存成功！`
