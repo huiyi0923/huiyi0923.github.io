@@ -184,10 +184,16 @@
                 
             }else if (yhxx2=='打工'){
                 p1.innerHTML=`${hf}打工开始，倒计时30秒，不要走开`
+                dgtx=0
+                if (dgtx>=1){
+                    p1.innerHTML=`${hf}正在打工，无法继续打工`
+                }
+                dgtx=1+(+dgtx)
                 setTimeout(() => {
                     p1.innerHTML=`${hf}打工成功，获得金币70`
                     jingb=70+(+jingb)
                     // localStorage.setItem('jb',jingb)
+                    dgtx=0
                 }, 30000)
             }else if (yhxx2=='保存金币'){
                 localStorage.setItem('jb',jingb)
