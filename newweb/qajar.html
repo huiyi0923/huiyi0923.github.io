@@ -227,10 +227,10 @@
             e.preventDefault()
             console.log(yhxx2)
             const date1=new Date()
-            // if (yonghm===null||mima===null){
-            //     e.preventDefault()
-            //     alert('你没有登录,请先登录')
-            if (yhxx2=='签到'){
+            if (yonghm===null||mima===null){
+                e.preventDefault()
+                alert('你没有登录,请先登录')
+            }else if (yhxx2=='签到'){
                 let xzrq=date1.getDate()
                 if (localStorage.getItem('qdsj')===null || localStorage.getItem('qdsj')!=xzrq){
                     p1.innerHTML=`${hf}签到成功，获得金币50枚`
