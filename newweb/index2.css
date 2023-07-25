@@ -267,26 +267,26 @@ body {
 }
 .tobu .ycd {
   position: relative;
-  background-color: #766798;
+  background-color: #f2f4f5;
   width: 24vh;
   padding-top: 5px;
   text-align: center;
   border-radius: 10px;
   margin-left: 21.33333333vh;
-  color: #fff;
+  color: #e37a7a;
   display: none;
   cursor: pointer;
-  box-shadow: 1px 2px 10px 3px #666666;
+  box-shadow: 1px 2px 10px 3px #d0d0d0;
 }
 .tobu .ycd p a {
-  color: #fff;
+  color: #a4d9dc;
 }
 .tobu .ycd span {
   position: absolute;
   left: 2px;
   top: 2px;
   font-size: small;
-  background-color: #6fd13a;
+  background-color: #5df30d;
 }
 .tobu .ycd p a:hover {
   color: #7cb6e6;

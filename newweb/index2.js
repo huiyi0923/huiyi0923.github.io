@@ -76,6 +76,12 @@ if (yonghm===null||mima===null){
 // })
 document.querySelector('.tobu span').addEventListener('click',function(){
     document.querySelector('.tobu .ycd').style.display='block'
+    if (yonghm===null||mima===null){
+        document.querySelector('.tobu .xcj2 .ycd p .ncm').innerHTML='未登录'
+    }else{
+        document.querySelector('.tobu .xcj2 .ycd p .ncm').innerHTML=`昵称:${yonghm}`
+        document.querySelector('.tobu .xcj2 .ycd p .ncm').style.color='#5df30d'
+    }
 })
 
 document.querySelector('.tobu .ycd span').addEventListener('click',function(){
@@ -103,7 +109,14 @@ document.querySelector('.tobu .xcj2 .ycd .zux').addEventListener('click',functio
     }
 })
 
-
+// document.querySelector('.tobu .xcj2 .ycd .zux').addEventListener('click',function(){
+//     if (yonghm===null||mima===null){
+//         document.querySelector('.tobu .xcj2 .ycd p .ncm').innerHTML='未登录'
+//         console.log('1')
+//     }else{
+//         document.querySelector('.tobu .xcj2 .ycd p .ncm').innerHTML=`昵称:${yonghm}`
+//     }
+// })
 // // 个人中心区
 // document.querySelector('.btn3').addEventListener('click',function(){
 //     if (yonghm===null||mima===null){
