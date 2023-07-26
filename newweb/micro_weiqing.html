@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://huiyi0923.github.io/data/logo.ico" type="images/x-icon">
+    <meta name="description" content="原名：微清网络，作为回忆改名为：那年夏天网络">
+    <meta name="keywords" content="微清,网络,官网,夏天,网站,微清网络,HTML,html,微清网-（那年夏天网络）,微博,阿清微博,AQWB">
+    <!-- <link rel="stylesheet" href="./index2.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://huiyi0923.github.io/newweb/gongtindex.css" type="text/css">
+    <title>阿清微博--AQWB</title>
+    <style>
+html {
+  scroll-behavior: smooth;
+}
+.tobu .caidan2 {
+  display: none;
+}
+body {
+  background-color: #f1f7f9;
+}
+.tobu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 100%;
+  height: 16vh;
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px #ededed;
+}
+.tobu .caidan {
+  position: absolute;
+  right: 2.66666667vh;
+  top: 2.4vh;
+}
+.tobu .caidan2 {
+  position: absolute;
+  right: 2.66666667vh;
+  top: 1.6vh;
+  color: #000000;
+}
+.tobu .caidan2 button {
+  width: 8vh;
+  height: 8vh;
+  font-size: 20px;
+  background-color: #ececec;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2.13333333vh;
+}
+.tobu .caidan {
+  line-height: 10.66666667vh;
+}
+.tobu .caidan ul li {
+  float: right;
+  height: 5.33333333vh;
+  width: 10.66666667vh;
+}
+.tobu .caidan ul li a {
+  color: #000;
+}
+.tobu .caidan ul li a:hover {
+  color: #74698e;
+}
+.tobu .yccd {
+  position: relative;
+  position: absolute;
+  left: -61.33333333vh;
+  top: 0;
+  transition: all 0.5s;
+  width: 50.66666667vh;
+  height: 80vh;
+  background-color: #fffefe;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #00000018;
+  z-index: 2;
+}
+.tobu .yccd span {
+  position: absolute;
+  right: 1.33333333vh;
+  top: 1.33333333vh;
+  display: inline-block;
+  width: 6.66666667vh;
+  height: 6.66666667vh;
+  background-color: #e7e3e3;
+  line-height: 6.66666667vh;
+  text-align: center;
+  border-radius: 10px;
+  color: #727070;
+}
+.tobu .yccd span:hover {
+  color: #000000;
+}
+.tobu .yccd p:first-child {
+  text-align: center;
+  font-size: 5.33333333vh;
+  color: #727070;
+  border-radius: 10px;
+}
+.tobu .yccd ul li {
+  margin: 2.66666667vh;
+}
+.tobu .yccd ul li a {
+  color: #000;
+}
+.tobu .yccd img {
+  width: 50.66666667vh;
+}
+@keyframes log {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 21.33333333vh;
+  }
+}
+.tobu .logo img {
+  position: relative;
+  height: 21.33333333vh;
+  margin-top: -2.66666667vh;
+  color: #74698e;
+}
+.tobu .logo p img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18.66666667vh;
+  animation: log 1s infinite;
+}
+.xiabu3:hover {
+  width: 320px;
+  box-shadow: 1px 2px 10px 2px #b2b2b2;
+}
+.xcj svg {
+  position: fixed;
+  right: 5.33333333vh;
+  bottom: 13.33333333vh;
+  width: 8vh;
+  height: 8vh;
+  background-color: #74698e;
+  border-radius: 50%;
+  box-shadow: 2px 3px 10px 5px #575757d1;
+}
+.tobu {
+  position: relative;
+}
+.tobu .xcj2 svg {
+  position: absolute;
+  left: 21.33333333vh;
+  top: 6.53333333vh;
+}
+.tobu .xcj2 span {
+  position: absolute;
+  left: 26.66666667vh;
+  top: 5.46666667vh;
+  background-color: #ff4545;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.tobu .wq {
+  border: none;
+  height: 5.33333333vh;
+}
+.tobu .xcj2 span:nth-child(1):hover {
+  box-shadow: 1px 2px 10px 3px #b5b5b5;
+}
+.tobu .ycd {
+  position: relative;
+  background-color: #f2f4f5;
+  width: 24vh;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 21.33333333vh;
+  color: #e37a7a;
+  display: none;
+  cursor: pointer;
+  box-shadow: 1px 2px 10px 3px #d0d0d0;
+}
+.tobu .ycd p a {
+  color: #a4d9dc;
+}
+.tobu .ycd span {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  font-size: small;
+  background-color: #5df30d;
+}
+.tobu .ycd p a:hover {
+  color: #7cb6e6;
+}
+.tobu .ycd .zux {
+  color: #e37a7a;
+}
+
+/* 分割 */
+/* .kais{
+    width: 100%;
+    height: 120vh;
+    background-image: url(../images/bantu.jpg);
+    background-repeat:no-repeat;
+} */
+
+.tobu{
+    margin-bottom: 20px;
+}
+/* .kais .htz{
+    position: absolute;
+    top: 60vh;
+    left: 0;
+} */
+
+/* .kais .htz h1 span{
+        color: #5fda63;
+        font-size: 20vh;
+    } */
+
+.kais{
+    margin-top: 10px;
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px 30px #f4f4f4;
+}
+
+.kais .htz{
+    text-align: center;
+    padding-top: 20vh;
+    /* line-height: 60vh; */
+}
+.kais2{
+    margin: auto;
+    margin-top: 20px;
+}
+.kais3{
+    margin: auto;
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.canpjs img{
+    width: 60%;
+    height: 50vh;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+}
+.canpjs ul li{
+    background-color: #fff;
+    margin: auto;
+    float: left;
+    margin-right: 1%;
+    
+}
+
+.canpjs ul li:nth-child(3){
+    margin-right: none;
+}
+
+.canpjs{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.canpjs ul li p{
+    text-align: center;
+}
+.canpjs2{
+    width: 90%;
+    height: 125vh;
+    background-color: #fff;
+    margin-top: 20vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.canpjs2 img{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    width: 80%;
+    box-shadow: 2px 3px 10px 5px #e0e0e0;
+    border-radius: 20px;
+}
+.canpjs2 p{
+    margin: 5%;
+    font-size: large;
+    text-align: center;
+    padding: auto;
+}
+.canpjs3{
+    width: 80%;
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.canpjs3 p{
+    color: #cbc2c2;
+}
+.banq{
+    width: 90%;
+    height: 50vh;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 2px 3px 10px 10px #ebebeb;
+}
+    </style>
+</head>
+<body>
+    <div class="tobu">
+        <div class="logo"><img src="https://huiyi0923.github.io/data/logo.png" alt=""><p><img src="https://huiyi0923.github.io/data/slogo.png" alt=""></p></div>
+        <div class="xcj2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>
+        </div>
+        <div class="caidan"><ul>
+            <li><a href="#">首页</a></li>
+            <li><button class="wq">    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
+              </svg>黑夜</button></li>
+        </ul></div>
+    </div>
+
+    <div class="kais">
+        <!-- <img src="../images/图片.svg" alt=""> -->
+        <div class="htz">
+            <h2>微清网络-发现另一个自己</h2>
+        </div>
+        <p style="color: #c9c9c9;padding-top: 5vh;">新的一年开启新的希望，新的空白承载新的梦想。拂去岁月之尘，让欢笑和泪水，爱与哀愁在心中凝成一颗厚重的晶莹的琥珀。祝您新年快乐!</p>
+    </div>
+    <p class="kais2" style="color: #ffffff;background-color: #8def77;width: 100px;border-radius: 15px;height: 30px;text-align: center;line-height: 30px;">Get started!</p>
+    <p class="kais3">来到这里将会为您介绍我们的成绩 <span style="color: #4c81c2;">我们就从这开始吧！</span></p>
+    <div class="canpjs">
+        <ul>
+            <li><img src="https://huiyi0923.github.io/data/图片2.svg" alt=""><p>部署中请稍后</p></li>
+            <li><img src="https://huiyi0923.github.io/data/图片2.svg" alt=""><p>部署中请稍后</p</li>
+            <li><img src="https://huiyi0923.github.io/data/图片2.svg" alt=""><p>部署中请稍后</p></li>
+        </ul>
+    </div>
+    <!-- <p style="margin-top: 20px;"> 1</p> -->
+        <hr style="width: 70%;margin-left: 15%;margin-right: 15%;margin-top: 10%;">
+    <div class="canpjs2">
+        <h2 style="text-align: center;">网站售卖区</h2>
+        <img src="https://huiyi0923.github.io/data/网站介绍.png" alt="" title="网站截图">
+        <p>您可能想要一个精美的网站，可是不知道从何下手<br>那么您一定不要走开，低价出售网站源码</p>
+        <p style="font-size: medium;color: #929292;">该网站开发于2023年5~6月，耗时1个月暂时停止更新与维护，由于想要买服务器，准备低价出售此网站</p>
+    </div>
+    <div class="canpjs3">
+        <h2 style="text-align: center;">我们的成绩-关于我们的那些事情</h2>
+        <p>经历了2年的努力微清网络在2022年6月18日cl，那年微清叫“芒果科技”后来改名为“清白网络”再后来改为“i动”，又后来改为“微清网络”，23年6月份又想把“微清”改为“那年夏天网络”后面没有改成，“微清网络”第2个称呼为“阿清”</p>
+        <h2>我们最早的软件</h2>
+        <p>我们最早的软件“CIRLEQ机器人”在2022年6月发布了第一版，经历了几百次更新与维护，2022年11月停止更新关闭软件。在2023年2月重新开始发布2.0版本。到2月中旬停止更新 CIRLEQ崩溃</p>
+        <p>2023年4月开始恢复开发，2023年6月开始移动端开发，向着安卓开发。如果有想了解请前往旧网站[<a href="https://huiyi0923.github.io/indexth2.html">点我</a>]网站年旧失修可能崩溃</p>
+        <img src="../images/图片3.svg" alt="" width="70%" style="margin-top: 5%;">
+    </div>
+    <hr style="width: 70%;margin-left: 15%;margin-right: 15%;margin-top: 30%;">
+    <div class="canpjs4" style="margin-top: 500px;">
+      <img src="https://huiyi0923.github.io/data/图片.svg" alt="" width="80%" style="margin: 10%;">
+      <p style="margin-top: 5%;text-align: center;">别走开！还没部署完 记住这个网站<br><span style="color: #55da37;">【https://huiyi0923.github.io/newweb/micro_weiqing.html】</span></p>
+    </div>
+    <div class="banq">
+        <p>2023 © 微清网络 <a style="color: #4c81c2;" href="https://huiyi0923.github.io/jszc.html" target="_blank">--微清技术支持部</a></p>
+        <p>QQ1148246926</p>
+    </div>
+    </body>
