@@ -208,6 +208,9 @@ body {
 
 .tobu{
     margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 /* .kais .htz{
     position: absolute;
@@ -431,7 +434,7 @@ body {
 </head>
 <body>
     <div class="tobu">
-        <div class="logo"><img src="https://huiyi0923.github.io/data/LOGO3.png" alt=""><p><img src="https://huiyi0923.github.io/data/slogo.png" alt=""></p></div>
+        <div class="logo"><img src="https://huiyi0923.github.io/data/LOGO3.png" alt=""><p><img src="https://huiyi0923.github.io/data/slogo.png" alt="" class="slog"></p></div>
         <div class="xcj2">
             <svg style="margin-left: 5vh;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
@@ -446,7 +449,7 @@ body {
         </ul></div>
     </div>
 
-    <div class="kais">
+    <div class="kais" style="margin-top: 20vh;">
         <!-- <img src="../images/图片.svg" alt=""> -->
         <div class="htz">
             <h2 style="color: #000;">微清网络-发现另一个自己</h2>
@@ -549,6 +552,12 @@ but.addEventListener('click',()=>{
     document.querySelector('.xuanf svg').style.display='block'
     document.querySelector('.xuanf2 svg').style.display='none'
     console.log(document.querySelector('.xuanf'))
+    document.querySelector('.tobu').style.backgroundColor='#000'
+    document.querySelector('.slog').style.display='none'
+    document.querySelector('.tobu').style.color='#fff'
+
+    document.querySelector('.tobu .caidan ul li a').style.color='#fff'
+    document.querySelector('.tobu .xcj2 svg').style.color='#fff'
     bl+=1
     if (bl>1){
         bod.style.backgroundColor='#f1f7f9'
@@ -560,6 +569,12 @@ but.addEventListener('click',()=>{
         svg1.style.color='#000'
         document.querySelector('.xuanf svg').style.display='none'
         document.querySelector('.xuanf2 svg').style.display='block'
+        document.querySelector('.tobu').style.backgroundColor='#fff'
+        document.querySelector('.tobu').style.color='#000'
+        document.querySelector('.slog').style.display='block'
+
+        document.querySelector('.tobu .caidan ul li a').style.color='#000'
+        document.querySelector('.tobu .xcj2 svg').style.color='#000'
         bl=0
     }
 })
