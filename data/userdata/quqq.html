@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ头像</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        let str = location.href;
+        let index = str.indexOf("=");
+        let result = str.substring(index+1);
+        if (result.length<=4 || result=='https://huiyi0923.github.io/newweb/api/quqq.html'){
+            document.write('请传入正确的参数,列：https://huiyi0923.github.io/newweb/api/quqq.html?QQ=某人QQ号')
+        }else{
+            document.querySelector('p').innerHTML=`<img src="http://q2.qlogo.cn/headimg_dl?dst_uin=${result}&spec=5" alt="">`
+        }
+    </script>
+</body>
+</html>
