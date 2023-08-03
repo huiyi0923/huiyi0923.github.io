@@ -34,3 +34,27 @@ document.querySelector('.ewm svg').addEventListener('click',()=>{
 document.querySelector('#gban1').addEventListener('click',()=>{
     document.querySelector('.yc3').style.display='none'
 })
+// i=3
+// ggjs()
+// function ggjs(){
+//     setTimeout(() => {
+//     if (i>0){
+//         document.querySelector('.gonggao h5').innerHTML=`请等待${i--}秒`
+//     }
+// }, 1000)
+// }
+let ggjlsj=localStorage.getItem('ggjlsj')
+const date1=new Date()
+let xzrq=date1.getDate()
+if (ggjlsj===null || ggjlsj!=xzrq){
+    setTimeout(() => {
+        document.querySelector('.gban').style.display='block'
+    }, 5000)
+    document.querySelector('.gban').addEventListener('click',()=>{
+        document.querySelector('.gonggao').style.display='none'
+    })
+    localStorage.setItem('ggjlsj',xzrq)
+    console.log(xzrq)
+}else{
+    document.querySelector('.gonggao').style.display='none'
+}
