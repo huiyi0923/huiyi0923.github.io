@@ -34,26 +34,38 @@ function fromCode (str) {
     return b ; 
 }
 document.querySelector('#jm1').addEventListener('click',()=>{
+    const huiyuan=localStorage.getItem('huiyuan')
+    // localStorage.setItem('huiyuan','TRUE')
     let nr=document.querySelector('#tweet').value
     if (nr.length<=0){
         alert('你没有输入任何内容')
     }else{
         var code = nr;
         var toCodeValue = toCode(code);  // 字符串加密操作
-        console.log(toCodeValue)
-        document.querySelector('.xsjg').innerHTML=`加密结果：${toCodeValue}`
+        if (huiyuan==null & toCodeValue.length>50){
+            document.querySelector('.xsjg').innerHTML=`加密失败：不是会员追多只能加密50个字符。当前加密后字符${toCodeValue.length}。如需该服务请加QQ1148246926（永久）`
+        }else{
+            document.querySelector('.xsjg').innerHTML=`加密结果：${toCodeValue}`
+            console.log(toCodeValue)
+        }
+
     }
     document.querySelector('#tweet').value=''
 })
 document.querySelector('#jm2').addEventListener('click',()=>{
+    const huiyuan=localStorage.getItem('huiyuan')
     let nr=document.querySelector('#tweet').value
     if (nr.length<=0){
         alert('你没有输入任何内容')
     }else{
         var code = nr;
         var fromCodeValue = fromCode(nr);  // 字符串解密操作
-        console.log(fromCodeValue)
-        document.querySelector('.xsjg').innerHTML=`解密结果：${fromCodeValue}`
+        if (huiyuan==null & nr.length>50){
+            document.querySelector('.xsjg').innerHTML=`加密失败：不是会员追多只能解密50个字符。当前解密字符${nr.length}。如需该服务请加QQ1148246926（永久）`
+        }else{
+            console.log(fromCodeValue)
+            document.querySelector('.xsjg').innerHTML=`解密结果：${fromCodeValue}`
+        }
     }
     document.querySelector('#tweet').value=''
 })
@@ -89,6 +101,30 @@ svg1.style.color='#000'
 bl=0
 }
 })
+
+document.querySelector('.dxy p .hy').addEventListener('click',()=>{
+    document.querySelector('.dxy .ycxw').style.display='block'
+})
+
+document.querySelector('.btn-danger').addEventListener('click',()=>{
+    document.querySelector('.dxy .ycxw').style.display='none'
+})
+document.querySelector('.btn-success').addEventListener('click',()=>{
+    const kami=document.querySelector('.kami').value
+    if (kami==''){
+        alert('未输入任何内容')
+    }else if (kami=='camilo10001' || kami=='camilo28015' || kami=='camilo31052'){
+        alert('检验成功！欢迎您。（请保管好你的卡密，发现二次被人利用将撤销使用权！）')
+        localStorage.setItem('huiyuan','TRUE')
+        location.reload()
+    }else{
+        alert('检验未通过！如你没有卡密：请加QQ1148246926（永久）')
+    }
+})
+const huiyuan=localStorage.getItem('huiyuan')
+if (huiyuan=='TRUE'){
+    document.querySelector('.huypd').innerHTML='欢迎你会员用户'
+}
 function show_runtime() {
         window.setTimeout("show_runtime()", 1000);
         X = new Date("8/6/2023 22:10:59");
