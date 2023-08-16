@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>垃圾静态微博</title>
+<body>
+    <form>
+        <textarea id="tweet" rows="4" cols="50" placeholder="发表新微博"></textarea><br>
+        <button type="button" onclick="postTweet()">发布</button>
+    </form>
+    <div id="tweetList">
+        <!-- 这里将显示已发布的微博 -->
+    </div>
+    <script>
+        function postTweet() {
+            var tweetContent = document.getElementById("tweet").value;
+            var tweetElement = document.createElement("p");
+            tweetElement.innerText = tweetContent;
+            document.getElementById("tweetList").appendChild(tweetElement);
+            // document.querySelector('.yhtp').innerHTML=`<img src="http://q2.qlogo.cn/headimg_dl?dst_uin=${localStorage.getItem('QQ')}&spec=5" alt="">`
+        }
+    </script>
+</body>
+</html>
