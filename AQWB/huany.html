@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>阿清微博2.0--欢迎您</title>
+    <link rel="icon" href="https://huiyi0923.github.io/data/logo2.ico" type="images/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-190316399-3');
+    </script>
+    <style type="text/css">
+        p {
+            margin: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .overlay,
+        .scare {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        p.overlay-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: black;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        p.overlay-description {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        a.overlay-link {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(255, 0, 0);
+            line-height: 1;
+            position: relative;
+            margin-top: 16px;
+        }
+
+        a.overlay-link::before {
+            position: absolute;
+            content: "";
+            height: calc(50% + 4px);
+            width: calc(100% + 8px);
+            bottom: -4px;
+            left: -4px;
+            background-color: rgba(132, 94, 194, 0.1);
+        }
+
+        .overlay-body {
+            max-width: 512px;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        }
+
+        .overlay[hidden] {
+            display: none;
+        }
+
+        .overlay {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://www.loliapi.com/acg/);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 0;
+        }
+
+        .text-bg {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 24px;
+        }
+
+        .scare {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="overlay" class="overlay">
+        <div class="text-bg">
+            <div class="overlay-body">
+                <p class="overlay-title">阿清微博2.0，欢迎您！</p>
+                <p>AQWB--micro qing network</p>
+                <p class="overlay-description">注意事项：注册和登录时的密码要全部是<b>数字</b>！<br>登录时不要把<b>ID看成昵称</b>!<br>遇到一直刷新<b>无法退出</b> 把网址“?”后的字符全删掉！<br>实在无法决绝 加<b>QQ1148246926</b></p>
+                <p class="overlay-description">This page is the welcome page. <b>Micro qing network & QQ1148246926</b> all rights reserved, refused to steal the source code, <b>offenders will investigate!</b></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const date1=new Date()
+        let hyyy=date1.getDate()
+        localStorage.setItem('hysj',hyyy)
+        setTimeout(() => {location.href='http://weiqing.1ao.top/index2.php?id='},5000)
+    </script>
+</body>

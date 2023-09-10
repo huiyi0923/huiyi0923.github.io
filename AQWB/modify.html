@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://huiyi0923.github.io/data/logo2.ico" type="images/x-icon">
+  <meta name="description" content="原名：微清网络，作为回忆改名为：那年夏天网络">
+  <meta name="keywords" content="微清,网络,官网,夏天,网站,微清网络,HTML,html,微清网-（那年夏天网络）,微博,阿清微博,AQWB">
+  <title>阿清微博--修改信息</title>
+  <!-- 引入bootstrap.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <!-- 公共 -->
+  <style>
+    .ck{
+        color: #4ae73c;
+    }
+    html,
+    body {
+      background-color: #EDF0F5;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 520px;
+      height: 540px;
+      background-color: #fff;
+      padding: 60px;
+      box-sizing: border-box;
+    }
+
+    .container h3 {
+      font-weight: 900;
+    }
+  </style>
+  <!-- 表单容器和内容 -->
+  <style>
+    .form_wrap {
+      color: #8B929D !important;
+    }
+
+    .form-text {
+      color: #8B929D !important;
+    }
+  </style>
+  <!-- 提示框样式 -->
+  <style>
+    .alert {
+      transition: .5s;
+      opacity: 0;
+    }
+
+    .alert.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>修改信息</h3>
+    <!-- 登录结果-提示框 -->
+    <div class="alert alert-success" role="alert">
+      提示消息
+    </div>
+    <!-- 表单 -->
+    <div class="form_wrap">
+        <div class="mb-3">
+          <label for="username" class="form-label" name="nic">修改昵称</label>
+          <input type="text" class="form-control username">
+        </div>
+        <div class="mb-3">
+          <label for="QQ" class="form-label" name="xgQQ">修改QQ</label>
+          <input type="QQ" class="form-control QQ">
+          <label for="password" class="form-label" name="mima">修改密码</label>
+          <input type="password" class="form-control password">
+        </div>
+        <button type="button" class="btn btn-primary btn-login btn-login2"> 立即检测 </button>
+        <button type="button" class="btn btn-primary btn-login qrxg"> 确认修改 </button>
+    </div>
+    <p>返回上一步？<a href="./index2.php?id=">返回</a></p>
+    <p class="ck"></p>
+  </div>
+  <script>
+    const myAlert = document.querySelector('.alert')
+    function alertFn(msg, isSuccess) {
+      myAlert.classList.add('show')
+
+      myAlert.innerText = msg
+      const bgStyle = isSuccess ? 'alert-success' : 'alert-danger'
+      myAlert.classList.add(bgStyle)
+
+      setTimeout(() => {
+        myAlert.classList.remove('show')
+        myAlert.classList.remove(bgStyle)
+      }, 2000)
+    }
+    
+    document.querySelector('.btn-login2').addEventListener('click', () => {
+      const username = document.querySelector('.username').value
+      const password = document.querySelector('.password').value
+      const QQ = document.querySelector('.QQ').value
+      if (username.length < 2) {
+        alertFn('用户名必须大于等于2位', false)
+        return 
+      }else if (password.length < 6) {
+        alertFn('密码必须大于等于6位', false)
+        return 
+      }else if (username.length > 8) {
+        alertFn('用户名最多8位', false)
+        return 
+      }else if (password.length > 8) {
+        alertFn('密码最多8位', false)
+        return 
+      }else if (QQ.length<5) {
+        alertFn('QQ类型错误 请填入真的QQ号', false)
+        return 
+      }else{
+        alertFn('无任何错误，点击“确认修改”', true)
+      }
+      
+    })
+    document.querySelector('.qrxg').addEventListener('click', () => {
+      let urlParams = new URLSearchParams(window.location.search);
+      let id = urlParams.get('id');
+      location.href=`./modifypd.php?uid=${id}&nic=${document.querySelector('.username').value}&xgQQ=${document.querySelector('.QQ').value}&mima=${document.querySelector('.password').value}`
+    })
+  </script>
+  <script>
+    document.oncontextmenu = function(){
+    event.returnValue = false;
+    }// 或者直接返回整个事件
+    document.oncontextmenu = function(){
+    return false;
+    }
+    
+    
+    window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+        // 判断是否按下F12，F12键码为123
+        if (event.keyCode == 123) {
+        event.preventDefault(); // 阻止默认事件行为
+        window.event.returnValue = false;
+        }
+    }</script>
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+    <script src="https://huiyi0923.github.io/AQWB/fangwbs.js"></script>
+</body>
+</html>

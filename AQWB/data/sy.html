@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>QQ Chat Bot</title>
+  <style>
+    .chat-container {
+      width: 400px;
+      height: 500px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .message {
+      margin-bottom: 10px;
+    }
+
+    .user-message {
+      text-align: right;
+      color: blue;
+    }
+
+    .bot-message {
+      text-align: left;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat" class="chat-container"></div>
+  <input type="text" id="user-input" placeholder="输入消息..." />
+  <button onclick="sendMessage()">发送</button>
+
+  <script>
+    const chatContainer = document.getElementById('chat');
+    const userInput = document.getElementById('user-input');
+
+    function sendMessage() {
+      const userMessage = userInput.value;
+      displayMessage(userMessage, 'user');
+      respondToMessage(userMessage);
+      userInput.value = '';
+    }
+
+    function displayMessage(message, sender) {
+      const messageElem = document.createElement('div');
+      messageElem.classList.add('message');
+      sender === 'user' ? messageElem.classList.add('user-message') : messageElem.classList.add('bot-message');
+      messageElem.innerHTML = message;
+      chatContainer.appendChild(messageElem);
+    }
+
+    function respondToMessage(message) {
+      // 在这里根据用户的消息编写自定义的回复逻辑
+      // 这里是示例，简单的机器人回复
+      const botResponse = '你好！我是QQ机器人喵~';
+      displayMessage(botResponse, 'bot');
+    }
+  </script>
+</body>
+</html>

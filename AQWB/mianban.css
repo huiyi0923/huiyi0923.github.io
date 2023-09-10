@@ -1,0 +1,126 @@
+body {
+  background-color: #f7f9ff;
+}
+.tobunr {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 5px #ebf3f4bd;
+}
+.tobunr i {
+  position: absolute;
+  right: 3vh;
+}
+.tuogk {
+  margin-top: 10vh;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 1px 1px 10px 5px #ebf3f4bd;
+  padding: 3vh;
+  position: relative;
+}
+.tuogk .ku {
+  font-size: larger;
+}
+.tuogk .tianjia {
+  position: absolute;
+  right: 3vh;
+  background-color: #497ee0;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh;
+  color: #fff;
+}
+.tuogk .tianjia:hover {
+  background-color: #2969e0;
+}
+.fgx1 {
+  border-bottom: 1px solid #c3c7d1;
+  width: 70%;
+  margin: auto;
+}
+.tuogk .nr1 button {
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.tuogk .nr1 .sanc {
+  position: absolute;
+  right: 2vh;
+  background-color: #bd401e;
+}
+.tuogk .nr1 .sanc:hover {
+  background-color: #992a0b;
+}
+.tuogk .nr1 .bj {
+  position: absolute;
+  right: 11vh;
+  background-color: #25b31d;
+}
+.tuogk .nr1 .bj:hover {
+  background-color: #178d11;
+}
+.tuogk .nr1 .tuogk2 span {
+  margin-left: 2vh;
+}
+.tianjia a {
+  color: #fff;
+}
+.nr1 a {
+  color: #fff;
+}
+.tobunr img {
+  height: 5%;
+  width: 5%;
+  box-shadow: 1px 2px 10px 3px #d2d3d6c3;
+  border-radius: 50%;
+  margin: 2vh;
+}
+.tisl {
+  width: 60%;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  box-shadow: 2px 3px 10px 1000px #c9c9c99c;
+  padding: 10px;
+  z-index: 2;
+  display: none;
+  overflow: auto;
+}
+.neirxx {
+  overflow: auto;
+}
+.tisl .neirxx {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 3vh;
+}
+.tisl h3 {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+@media (max-width: 768px) {
+  .tobunr img {
+    height: 10%;
+    width: 10%;
+  }
+  .tisl {
+    width: 85%;
+    left: 7.5%;
+  }
+}
+.bqxx {
+  text-align: center;
+  color: #cfcbcb;
+  /*margin-top: 5vh;*/
+  /*margin-bottom: 3vh;
+  position: fixed;
+  left: 50%;
+  bottom: 3vh;
+  transform: translate(-50%, -50%);*/
+}
