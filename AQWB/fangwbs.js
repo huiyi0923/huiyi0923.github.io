@@ -1,4 +1,4 @@
-wzm=document.domain;if (wzm!='weiqing.1ao.top'){location.href='https://huiyi0923.github.io/newweb/fangwjg.html'};
+// wzm=document.domain;if (wzm!='weiqing.1ao.top'){location.href='https://huiyi0923.github.io/newweb/fangwjg.html'};
 var OriginTitile = document.title,
 titleTime;
 document.addEventListener("visibilitychange",
