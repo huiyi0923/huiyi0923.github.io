@@ -58,11 +58,11 @@
     color: #000000;
   }
   .cpjso img,.kais1 img{
-    width: 90%;
+    width: 99%;
     margin: auto;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    border-radius: 7px;
+    border-radius: 5vh;
   }
   .cpjso p,.kais1 p{
     color: #4f4f4fda;
@@ -113,15 +113,18 @@
     .daoh{
       display: block;
     }
+    .gongxianz{
+      display: none;
+    }
   }
   /* 盒子 */
-  .container {
+  .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   
-  .jieks {
+  .jieks{
     width: 31%; /* 一行排3个盒子 */
     margin: 1%; /* 盒子与盒子之间的空隙 */
     background-color: white;
@@ -151,13 +154,13 @@
     padding: 1vh;
   }
   @media (max-width: 960px) {
-    .jieks {
+    .jieks{
       width: 48%;
     }
   }
   /* 盒子分割 */
   @media (max-width: 640px) {
-    .jieks {
+    .jieks{
       width: 90%; 
     }
     .cpjso li h1{
@@ -187,3 +190,116 @@
           );
     }
   }
+/* 版权  */
+.banquanbf1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #534b8b;
+}
+
+.jies{
+  width: 31%; /* 一行排3个盒子 */
+  margin: 1%; /* 盒子与盒子之间的空隙 */
+}
+
+.banquanbf1 {
+  background-color: #534b8b;
+}
+
+.banquanbf1 .jies p:hover {
+  transition: all 0.7s;
+  margin-left: 2vh;
+}
+.banquanbf1 .jies p {
+  margin: 1vh 0 1vh 0.5vh;
+  color: #fffffff2;
+  cursor: pointer;
+  margin-left: 0.5vh;
+}
+.banquanbf1 .jies h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.banquanbf1 .jies p a {
+  color: #fffffff2;
+}
+.banquanbf1 .jies {
+  position: relative;
+  padding: 2vh;
+  border-radius: 10px;
+}
+.banquanbf1 .zuihodh1 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.banquanbf1 .zuihodh1 .bqfgx1{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 3vh;
+  border-top: 1px solid #ffffff;
+}
+.zuihodh1 p{
+  text-align: center;
+  color: #ffffffd2;
+}
+.zuihodh1 p a{
+  color: rgba(20, 172, 20, 0.856);
+}
+/* .zuihodh1 h1 img{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+} */
+@media (max-width: 960px) {
+  .jies{
+    width: 48%;
+  }
+}
+@media (max-width: 640px) {
+  .jies{
+    width: 90%; 
+  }
+}
+/* 版权结束 */
+/* 公共弹窗部分 */
+.tisl{
+  width: 60%;
+  max-height: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  box-shadow: 2px 3px 10px 1000vh #adadad9c;
+  padding: 10px;
+  z-index: 2;
+  display: none;
+  overflow: auto;
+}
+.tisl button{
+  position: absolute;
+  bottom: 1vh;
+  right: 5vh;
+}
+.neirxx{
+  overflow: auto;
+}
+.tisl .neirxx{
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 3vh;
+}
+.tisl h3{
+  text-align: center;
+  margin-bottom: 3vh;
+}
+@media (max-width: 768px) {
+  .tisl{
+      width: 85%;
+      left: 7.5%;
+  }
+}
