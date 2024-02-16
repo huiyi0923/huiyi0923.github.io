@@ -25,3 +25,4 @@ document.onkeydown = function() {
         return false;
     }
 }
+console.log("%c欢迎访问微清网络产品！", "color:green");
