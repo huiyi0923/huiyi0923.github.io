@@ -12,3 +12,16 @@ function() {
   titleTime = setTimeout(function() {
       document.title = OriginTitile
   },2000)}});
+//不让扒站
+document.onkeydown = function() {
+    var oEvent = window.event;
+    if (oEvent.keyCode == 123) {
+        alert("您按下了F12，本是同根生，相煎何太急!");
+        document.body.innerHTML = "<h1>我艹你妈爱扒站</h1>";
+        return false;
+    }
+    if (oEvent.keyCode == 83 && oEvent.ctrlKey) {
+        alert("您按下了ctrl+s，不要这么玩");
+        return false;
+    }
+}
