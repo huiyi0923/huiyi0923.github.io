@@ -16,14 +16,15 @@ function() {
 document.onkeydown = function() {
     var oEvent = window.event;
     if (oEvent.keyCode == 123) {
-        alert("您按下了F12，本是同根生，相煎何太急!");
+        alert("本是同根生，相煎何太急!");
         document.body.innerHTML = "<h1>我艹你妈爱扒站</h1>";
         return false;
     }
-    if (oEvent.keyCode == 83 && oEvent.ctrlKey) {
-        alert("您按下了ctrl+s，不要这么玩");
-        return false;
-    }
+}
+  document.oncontextmenu = function(e){
+    alert("为了您良好的体验，本站禁止该操作");
+	   return false
+  
 }
 // location.href='https://huiyi0923.github.io/跑路了.html'
 console.log("%c欢迎访问微清网络产品！", "color:green");
