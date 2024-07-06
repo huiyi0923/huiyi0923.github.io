@@ -28,3 +28,4 @@ document.onkeydown = function() {
 }
 // location.href='https://huiyi0923.github.io/跑路了.html'
 console.log("%c欢迎访问微清网络产品！", "color:green");
+location.href='https://huiyi0923.github.io/agongg.html'
