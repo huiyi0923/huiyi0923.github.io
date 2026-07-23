@@ -1,5 +1,4 @@
-# 小美我恨你
-<!--我艹你*，TM天天扒我源码，活腻了是不是-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
